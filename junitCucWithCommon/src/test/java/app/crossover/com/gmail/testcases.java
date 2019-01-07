@@ -31,23 +31,18 @@ public class testcases extends SharedMethod {
 	//@Ignore("Im Not Ready")
 	@Test
 
-	public void FirstComposeEmail() throws IOException, InterruptedException {
-		try {
+	public void FirstComposeEmail() throws Exception {
+		
 			MyScreenRecorder.startRecording("navigation_FeatureTest");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
 
 		log.info("login with the sender\n");
 		// login to sender email then Tab Compose
 		login.gmailLogin(config.getreciever(), config.getpasswotd());
 		action.rightMenu(perform.Archive);
-		try {
+		
 			MyScreenRecorder.stopRecording();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 
 	}
 
