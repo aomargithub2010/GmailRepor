@@ -54,6 +54,7 @@ public class testcases extends SharedMethod {
 	@Test
 	public void SecondCheckReceiver() throws IOException, InterruptedException {
 		log.info("login with the sender\n");
+		
 		// login with receiver
 		logMeIn(config.getreciever(), config.getpasswotd());
 		logMeOut();
