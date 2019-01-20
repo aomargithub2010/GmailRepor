@@ -40,15 +40,15 @@ abstract public class TestBase implements DesignInterface {
 		if (file.getbrowser().equals("Chrome")) {
 
 
-			System.setProperty("webdriver.chrome.driver", file.getChromedriverpath());
-			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--start-maximized");
-			driver = new ChromeDriver(chromeOptions);
+		//	System.setProperty("webdriver.chrome.driver", file.getChromedriverpath());
+			//ChromeOptions chromeOptions = new ChromeOptions();
+			//chromeOptions.addArguments("--start-maximized");
+			//driver = new ChromeDriver(chromeOptions);
 		
 			// execute in chrome driver
 
-	   // WebDriverManager.chromedriver().setup();
-	    // driver = new ChromeDriver();
+	    WebDriverManager.chromedriver().setup();
+	     driver = new ChromeDriver();
 		} else if (file.getbrowser().equals("firefox")) {
 		//	WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
