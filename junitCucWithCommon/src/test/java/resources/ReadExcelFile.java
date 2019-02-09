@@ -9,7 +9,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelFile {
+public class ReadExcelFile {
 	public void readExcel(String filePath,String fileName,String sheetName) throws IOException{
 
 	    //Create an object of File class to open xlsx file
