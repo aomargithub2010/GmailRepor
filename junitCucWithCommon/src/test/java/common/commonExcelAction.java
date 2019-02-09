@@ -23,7 +23,7 @@ public class commonExcelAction {
 	public void writeTheExcelFile() throws IOException {
 		 //Create an array with the data in the same order in which you expect to be filled in excel file
 
-        String[] valueToWrite = {"Mr. E","Noida","name"};
+        String[] valueToWrite = {"Test1","Noida","name"};
 
         //Create an object of current class
 
